@@ -1,0 +1,83 @@
+<html xmlns="http://www.w3.org/1999/html">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CLUB</title>
+  <link rel="icon" type="image/png" href="metamask-fox.svg">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.14.1/css/mdb.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="metamask.css" type="text/css"><H1>
+</head>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <h1>CLUB</h1>
+    <button id="connectButton">Connect</button>
+    <button id="getAccounts">getAccounts</button>
+    <button id="safeMint">Buy a token.</button>
+    <br>
+<br>
+<br>
+    <label for="songRequestName">Song name</label>
+    <input type="text" id="songRequestName" name="songRequest">
+    <button id="songRequestButton">Request the song.</button>
+    <br>
+    <button id="playSongButton">Get next song.</button>
+    <h2 id="nextSongResult"></h2>
+
+	<br>
+    <button id="checkOwnerButton">Check if you're owner.</button>
+	<br>
+	<br>
+	<br>
+    <br>
+    <label for="tokenId">Token ID</label>
+    <input type="text" id="tokenId" name="tokenId">
+    <label for="setDebtAmount">Debt Amount in RSD.</label>
+    <input type="text" id="setDebtAmount" name="setDebtAmount">
+    <button id="setDebtButton">Set Debt.</button>
+
+    <h1 id="getAccountsResult"></h1>
+
+    <label for="payTokenId">Token ID</label>
+    <input type="text" id="payTokenId" name="tokenId">
+    <label for="payDebtAmount">Amount to pay in GWEI.</label>
+    <input type="text" id="payDebtAmount" name="setDebtAmount">
+    <button id="payDebtButton">Pay Debt.</button>
+
+    <br>
+
+    <label for="getDebtTokenId">Token ID</label>
+    <input type="text" id="getDebtTokenId" name="tokenId">
+    <button id="getDebtButton">Get Debt.</button>
+
+    <br>
+
+
+    <button id="auctionStartButton">Start auction</button>
+    <button id="auctionEndButton">End auction</button>
+    <h2 id="auctionResult"></h2>
+    <br>
+    <h2 id="highestBidResult">0.000</h2>
+    <br>
+
+    <label for="bidAmount">Bid amout in WEI</label>
+    <input type="number" id="bidAmount" name="bidAmount">
+    <button id="bidButton">Bid</button>
+
+    <br>
+
+    <button id="withdrawButton">Withdraw pending returns</button>
+
+
+
+    <script src="node_modules/@metamask/onboarding/dist/metamask-onboarding.bundle.js" defer ></script>
+    <script type="module" src="contract.js" defer ></script>
+    <script>
+      console.log("Test");
+    </script>
+
+
+</html>
